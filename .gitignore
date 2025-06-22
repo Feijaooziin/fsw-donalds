@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# TXTs
+/1 - Restaurants.txt
+/0 - Onde parei.txt
