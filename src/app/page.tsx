@@ -1,12 +1,17 @@
+import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 const HomePage = () => {
   return (
-    <div className="rounded-xl border border-red-500 p-5">
-      <h1 className="text-red-500">Olá Mundo!</h1>
-      <Input placeholder="Oie" />
-      <Button>Testando</Button>
+    <div className="flex h-screen flex-col items-center justify-center gap-10 p-5">
+      <Button className="w-fit rounded-full text-3xl" asChild>
+        <Link href={"./fsw-donalds"}>FSW DONALDS</Link>
+      </Button>
+
+      <Button className="w-fit rounded-full text-3xl" asChild>
+        <Link href={"./feijao-burguer"}>FEIJAO BURGUER</Link>
+      </Button>
     </div>
   );
 };
