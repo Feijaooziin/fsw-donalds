@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 
 import { db } from "@/lib/prisma";
 
+import RestaurantCategories from "./components/categories";
 import RestauirantHeader from "./components/header";
 
 interface RestaurantMenuPageProps {
@@ -31,6 +32,7 @@ const RestaurantMenuPage = async ({
   return (
     <div>
       <RestauirantHeader restaurant={restaurant} />
+      <RestaurantCategories restaurant={restaurant} />
     </div>
   );
 };
