@@ -12,9 +12,10 @@ const RestaurantsMap = async () => {
             {restaurant.map((item) => (
                 <div key={item.id} className="flex flex-col items-center justify-center">
                     {/* ESQUERDA */}
-                    <Button className="rounded-xl text-xl h-full p-2 gap-6 flex items-center">
-                        <Link href={`./${item?.slug}/`}>{item?.name}</Link>
-                        <div className="relative min-h-[36px] min-w-[36px]">
+                    <Button className="rounded-xl text-xl h-full p-2 flex items-center">
+                        <Link href={`./${item?.slug}/`} className="flex gap-6 items-center">
+                            {item?.name}
+                            <div className="relative min-h-[36px] min-w-[36px]">
                             <Image
                             src={item?.avatarImageUrl}
                                 alt={item?.name}
@@ -22,6 +23,7 @@ const RestaurantsMap = async () => {
                                 className="object-contain"
                             />
                         </div>
+                        </Link>
                     </Button>                
                 </div>
             ))}

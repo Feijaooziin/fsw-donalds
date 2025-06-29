@@ -11,8 +11,8 @@ const HomePage = () => {
       </div>
 
       {/* MAIN */}
-      <div className="flex flex-col justify-between h-full bg-blue-500">
-        <div className="bg-pink-300">
+      <div className="flex flex-col justify-between h-full">
+        <div>
           <div className="mx-3 mt-16">
             <h1 className="text-4xl mb-12 font-bold">
               ESCOLHA ONDE QUER PEDIR
