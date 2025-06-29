@@ -4,7 +4,7 @@ const HomePage = () => {
   return (
     <div className="h-screen flex flex-col">
       {/* CABEÇALHO */}
-      <div className="flex flex-col w-full justify-center pt-2 px-3 bg-orange-400">
+      <div className="flex flex-col w-full justify-center py-2 px-3 bg-orange-400">
         <h1 className="text-3xl font-bold">
           CABEÇALHO
         </h1>

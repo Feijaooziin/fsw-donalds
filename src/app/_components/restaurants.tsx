@@ -10,9 +10,9 @@ const RestaurantsMap = async () => {
     return ( 
         <div className="flex flex-col items-start jusitfy-center gap-5 mx-3">
             {restaurant.map((item) => (
-                <div key={item.id} className="flex flex-col items-center justify-center">
+                <div key={item.id} className="flex flex-col justify-center">
                     {/* ESQUERDA */}
-                    <Button className="rounded-xl text-xl h-full p-2 flex items-center">
+                    <Button className="rounded-xl text-xl h-full p-2 flex items-center w-fit">
                         <Link href={`./${item?.slug}/`} className="flex gap-6 items-center">
                             {item?.name}
                             <div className="relative min-h-[36px] min-w-[36px]">
@@ -24,7 +24,8 @@ const RestaurantsMap = async () => {
                             />
                         </div>
                         </Link>
-                    </Button>                
+                    </Button>
+                    <p className="text-lg line-clamp-2 font-medium text-gray-500">{item.description}</p>        
                 </div>
             ))}
         </div>
