@@ -10,7 +10,7 @@ interface RestaurantHeaderProps {
   restaurant: Pick<Restaurant, "name" | "coverImageUrl">;
 }
 
-const RestauirantHeader = ({ restaurant }: RestaurantHeaderProps) => {
+const RestaurantHeader = ({ restaurant }: RestaurantHeaderProps) => {
   const router = useRouter();
   const handleBackClick = () => {
     router.back();
@@ -45,4 +45,4 @@ const RestauirantHeader = ({ restaurant }: RestaurantHeaderProps) => {
   );
 };
 
-export default RestauirantHeader;
+export default RestaurantHeader;

@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Feijão Burguer",
-  description: "A Melhor Hamburgueria da Região!",
+  title: "AIFUUD",
+  description: "Seu app de pedidos!",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
   );
