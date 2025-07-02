@@ -17,7 +17,7 @@ const ProductsHeader = ({product}: ProductHeaderProps) => {
       };
       
     return ( 
-        <div className="relative w-ful h-[300px]">
+        <div className="relative w-ful min-h-[300px]">
 
                 <Button
                     variant="secondary"
